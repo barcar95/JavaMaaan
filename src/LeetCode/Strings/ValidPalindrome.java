@@ -26,8 +26,8 @@ public class ValidPalindrome {
 
         while(leftPointer < rightPointer){
             if(s.charAt(leftPointer) == s.charAt(rightPointer)){
-                leftPointer = leftPointer + 1;
-                rightPointer = rightPointer - 1;
+                leftPointer++;
+                rightPointer--;
             } else {
                 return false;
             }
